@@ -1,11 +1,12 @@
 import React from 'react';
 import "./App.css";
+import { Navbar } from './component';
 const App = () => {
   return (
-    <div>
-      <p>hllo world</p>
+    <div id='root'>
+      <Navbar />
     </div>
   )
 }
 
-export default App
+export default App;
