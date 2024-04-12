@@ -3,7 +3,7 @@ import "./Navbar.css";
 
 class Navbar extends Component {
   state = { clicked: false };
-  
+
   handleClick = () => {
     this.setState({ clicked: !this.state.clicked });
   };
@@ -55,15 +55,77 @@ class Navbar extends Component {
                   Home
                 </a>
               </li>
-              <li>
-                <a href="/Projects">Projects</a>
-              </li>
-              <li>
+              {/* <li>
                 <a href="/About
                 ">About</a>
+              </li>  */}
+              {/* Drop down for About us */}
+              <li>
+                <div class="dropdown show">
+                  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    About Us
+                  </a>
+
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="/Who-We-Are">Who We Are?</a>
+                    <a class="dropdown-item" href="/Managament-Team">Management Team</a>
+                    <a class="dropdown-item" href="/Trust-Document">Trust Documents</a>
+                  </div>
+                </div>
+              </li>
+              {/* <li>
+                <a href="/Projects">Projects</a>
+              </li> */}
+              {/* Drop down for projects */}
+              <li>
+                <div class="dropdown show">
+                  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Projects
+                  </a>
+
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="/Health">Health</a>
+                    <a class="dropdown-item" href="/Education">Education</a>
+                    <a class="dropdown-item" href="/Orphanage">Orphanage</a>
+                    <a class="dropdown-item" href="/Oldage-Home">Oldage Home</a>
+                    <a class="dropdown-item" href="/Livelihood">Livelihood</a>
+                    <a class="dropdown-item" href="/Disaster">Disaster</a>
+                  </div>
+                </div>
+              </li>
+              {/* <li>
+                <a href="/Get-Involved">Get Involved</a>
+              </li> */}
+              {/* Drop down for Get involved */}
+              <li>
+                <div class="dropdown show">
+                  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Get Involved
+                  </a>
+
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="/FCRA-Details">Get FCRA Details</a>
+                    <a class="dropdown-item" href="/Management-Team">Get Bank Details</a>
+                    <a class="dropdown-item" href="/Volunteer">Volunteer</a>
+                    <a class="dropdown-item" href="/Donate">Donate Now</a>
+                  </div>
+                </div>
               </li>
               <li>
-                <a href="/Connect">Contact</a>
+                <div class="dropdown show">
+                  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Media
+                  </a>
+
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="/Events">Events</a>
+                    <a class="dropdown-item" href="/Image-Gallery">Image Gallery</a>
+                    <a class="dropdown-item" href="/Video-Gallery">Video Gallery</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="/Connect">Contact Us</a>
               </li>
               <li>
                 <button id="logbutton">Log In</button>
