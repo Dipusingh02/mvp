@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import logo from '../../assets/favicon.ico'
 import "./Navbar.css";
 
 class Navbar extends Component {
@@ -13,7 +14,8 @@ class Navbar extends Component {
       <>
         <nav>
           <a href="/">
-            <svg
+            <img src={logo} alt="Trust's logo" />
+            {/* <svg
               id="logo-15"
               width="49"
               height="48"
@@ -42,7 +44,7 @@ class Navbar extends Component {
                 className="ccustom"
                 fill="#17CF97"
               ></path>{" "}
-            </svg>
+            </svg> */}
           </a>
 
           <div>
@@ -126,6 +128,9 @@ class Navbar extends Component {
               </li>
               <li>
                 <a href="/Connect">Contact Us</a>
+              </li>
+              <li>
+                <button id="DonateButton">Donate Now</button>
               </li>
               <li>
                 <button id="logbutton">Log In</button>
