@@ -1,16 +1,19 @@
-import React from 'react'
-import "./features.css"
-const Feature = ({ image, button }) => (
-  <div className="uniblu__features-container__feature">
-    <div className="uniblu__features-container__feature-title">
-      <div />
-      <img>{image}</img>
-    </div>
-    <div className="uniblu__features-container_feature-text">
-      <button>{button}</button>
+import React from "react";
+import "./features.css";
+
+const Features = ({ image, buttonText, onButtonClick, imageAlt = "Feature" }) => (
+  <div className="feature-container">
+    <div className="feature-box">
+      <img
+        src={image}
+        alt={imageAlt}
+        className="feature-img"
+      />
+      <button onClick={onButtonClick} className="feature-button">
+        {buttonText}
+      </button>
     </div>
   </div>
 );
 
-
-export default Features
+export default Features;
