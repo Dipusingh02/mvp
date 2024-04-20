@@ -1,0 +1,25 @@
+.feature-container {
+    display: inline-block;
+    margin-top: 0.6rem;
+    margin-top: 0.6rem;
+}
+
+.feature-box {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 20%; 
+    text-align: center; 
+    margin: 1rem;
+    justify-content: space-around;
+}
+
+.feature-img {
+  width: 17.5rem;
+  height: 12rem;
+}
+
+.feature-button {
+    width: 5rem;
+    margin-top: 1rem;
+
+}
