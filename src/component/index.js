@@ -3,4 +3,4 @@ export { default as idfeature } from './idfeature/Idfeature.jsx';
 export { default as header } from './header/Header.jsx';
 export { default as footer } from './footer/Footer.jsx';
 export { default as features } from './features/Features.jsx';
-export { default as Button } from './Button/Button.jsx';
+

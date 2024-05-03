@@ -1,6 +1,6 @@
 import React from 'react';
 import './home.css';
-import { Button } from '../../component';
+import { Button } from '../../container';
 const ButtonData=[
   {
     buttonText: 'Learn More',
