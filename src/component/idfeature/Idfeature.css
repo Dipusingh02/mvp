@@ -1,0 +1,51 @@
+.idfeature-container {
+    display: inline-block;
+    margin-top: 0.6rem;
+    margin-top: 0.6rem;
+    /* background: rgb(13,13,102);
+background: linear-gradient(90deg, rgba(13,13,102,1) 0%, rgba(3,102,171,1) 0%, rgba(3,102,171,1) 9%, rgba(27,91,170,1) 16%, rgba(212,64,176,1) 47%, rgba(38,52,196,1) 95%); */
+/* background: rgb(3,102,171);
+background: linear-gradient(90deg, rgba(3,102,171,1) 0%, rgba(13,13,102,1) 0%, rgba(27,91,170,1) 16%, rgba(3,102,171,1) 37%, rgba(138,38,196,1) 77%, rgba(175,64,212,1) 97%); */
+background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(2,37,78,1) 0%, rgba(4,56,126,1) 19.7%, rgba(85,245,221,1) 100.2% );
+border-radius: 2rem;
+margin: 1rem;
+}
+
+
+.idfeature-box {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 20%;
+    text-align: center;
+    margin: 1rem;
+    justify-content: space-around;
+}
+
+.idfeature-img {
+    width: 17.5rem;
+    border-radius: 8%;
+    height: 12rem;
+}
+
+.idfeature-container h1{
+    font-size: 2em;
+    color: white;
+    padding: .1rem;
+}
+.idfeature-container h2{
+    font-size: 1em;
+    color: white;
+    padding: .1rem;
+}
+.idfeature-button {
+    width: 8em;
+    margin-top: 1rem;
+    margin-left: 4.5rem;
+    border-radius: 0.5rem;
+    /* background-color: #30567f; */
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+    background: rgb(152,83,183);
+background: radial-gradient(circle, rgba(152,83,183,1) 19%, rgba(116,87,210,1) 25%, rgba(63,94,251,1) 38%, rgba(218,87,198,1) 52%, rgba(208,84,200,1) 56%, rgba(26,21,246,1) 63%, rgba(252,70,107,1) 100%);
+}

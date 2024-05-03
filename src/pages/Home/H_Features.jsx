@@ -8,22 +8,22 @@ import './H_Features.css';
 const featuresData = [
   {
     image: child1,
-    buttonText: 'Button 1',
+    buttonText: '  Donate Now ',
     onButtonClick: () => console.log("Clicked Button 1")
   },
   {
     image: child2,
-    buttonText: 'Button 2',
+    buttonText: '  Donate Now ',
     onButtonClick: () => console.log("Clicked Button 2")
   },
   {
     image: child3,
-    buttonText: 'Button 3',
+    buttonText: '  Donate Now ',
     onButtonClick: () => console.log("Clicked Button 3")
   },
   {
     image: child4,
-    buttonText: 'Button 4',
+    buttonText: '  Donate Now ',
     onButtonClick: () => console.log("Clicked Button 4")
   }
 ];

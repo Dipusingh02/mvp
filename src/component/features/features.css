@@ -7,19 +7,27 @@
 .feature-box {
     display: flex;
     flex-direction: column;
-    flex: 0 1 20%; 
-    text-align: center; 
+    flex: 0 1 20%;
+    text-align: center;
     margin: 1rem;
     justify-content: space-around;
 }
 
 .feature-img {
-  width: 17.5rem;
-  height: 12rem;
+    width: 17.5rem;
+    height: 12rem;
+    border-radius: 8%;
 }
 
 .feature-button {
-    width: 5rem;
+    width: 8em;
     margin-top: 1rem;
-
+    margin-left: 4.5rem;
+    border-radius: 0.5rem;
+    /* background-color: #30567f; */
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+    background: rgb(152,83,183);
+background: radial-gradient(circle, rgba(152,83,183,1) 19%, rgba(116,87,210,1) 25%, rgba(63,94,251,1) 38%, rgba(218,87,198,1) 52%, rgba(208,84,200,1) 56%, rgba(26,21,246,1) 63%, rgba(252,70,107,1) 100%);
 }
