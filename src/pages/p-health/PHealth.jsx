@@ -1,7 +1,12 @@
 import React from 'react';
 import "./phealth.css";
 import { Navbar, Header } from '../../component';
+import { Button } from '../../container';
 
+const ButtonData = [{
+  buttonText: 'JOIN US',
+  onButtonClick: () => console.log("Clicked Join Us")
+}]
 
 const PHealth = () => {
   return (
@@ -21,9 +26,24 @@ const PHealth = () => {
         <div>In addition to individual benefits, living a healthy life has ripple effects that extend to our families, communities, and society at large. Healthy individuals are more productive, engaged, and able to contribute meaningfully to their communities. By fostering a culture of health within our organization and beyond, we aim to create a positive impact that transcends individual boundaries and fosters collective well-being.</div>
         <div>At Maharani Vina Educational and Charitable Trust, we recognize that achieving and maintaining good health is a journey that requires support, resources, and collaboration. Through our diverse array of programs, workshops, and partnerships, we provide individuals with the tools and knowledge they need to make informed decisions about their health and well-being. Together, we can cultivate a healthier, happier future for all.</div>
       </div>
-      
+      <br />
+      <div className='health-main__button'>
+        <div className='health__button-main__heading'>
+          WANT TO BECOME A VOLUNTEER ?
+        </div>
+        <div className='health___button-main__content'>
+          {ButtonData.map((item, index) => (
+            <Button
+              key={index}
+              image={item.image}
+              buttonText={item.buttonText}
+              onButtonClick={item.onButtonClick}
+            />
+          ))}
+        </div>
+      </div>
     </div>
   )
-}                 
+}
 
 export default PHealth;
