@@ -9,120 +9,77 @@ class Navbar extends Component {
     this.setState({ clicked: !this.state.clicked });
   };
 
+  handleOverlayClick = () => {
+    this.setState({ clicked: false });
+  };
+
   render() {
     return (
       <>
         <nav>
           <a href="/">
             <img src={logo} alt="Trust's logo" />
-            {/* <svg
-              id="logo-15"
-              width="49"
-              height="48"
-              viewBox="0 0 49 48"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              {" "}
-              <path
-                d="M24.5 12.75C24.5 18.9632 19.4632 24 13.25 24H2V12.75C2 6.53679 7.03679 1.5 13.25 1.5C19.4632 1.5 24.5 6.53679 24.5 12.75Z"
-                className="ccustom"
-                fill="#17CF97"
-              ></path>{" "}
-              <path
-                d="M24.5 35.25C24.5 29.0368 29.5368 24 35.75 24H47V35.25C47 41.4632 41.9632 46.5 35.75 46.5C29.5368 46.5 24.5 41.4632 24.5 35.25Z"
-                className="ccustom"
-                fill="#17CF97"
-              ></path>{" "}
-              <path
-                d="M2 35.25C2 41.4632 7.03679 46.5 13.25 46.5H24.5V35.25C24.5 29.0368 19.4632 24 13.25 24C7.03679 24 2 29.0368 2 35.25Z"
-                className="ccustom"
-                fill="#17CF97"
-              ></path>{" "}
-              <path
-                d="M47 12.75C47 6.53679 41.9632 1.5 35.75 1.5H24.5V12.75C24.5 18.9632 29.5368 24 35.75 24C41.9632 24 47 18.9632 47 12.75Z"
-                className="ccustom"
-                fill="#17CF97"
-              ></path>{" "}
-            </svg> */}
           </a>
 
           <div>
             <ul
               id="navbar"
-              className={this.state.clicked ? "#navbar active" : "#navbar"}
+              className={this.state.clicked ? "active" : ""}
             >
               <li>
                 <a className="active" href="/">
                   Home
                 </a>
               </li>
-              {/* <li>
-                <a href="/About
-                ">About</a>
-              </li>  */}
-              {/* Drop down for About us */}
               <li>
-                <div class="dropdown show">
-                  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div className="dropdown show">
+                  <a className="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     About Us
                   </a>
-
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    <a class="dropdown-item" href="/Who-We-Are">Who We Are?</a>
-                    <a class="dropdown-item" href="/Managament-Team">Management Team</a>
-                    <a class="dropdown-item" href="/Trust-Document">Trust Documents</a>
+                  <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a className="dropdown-item" href="/Who-We-Are">Who We Are?</a>
+                    <a className="dropdown-item" href="/Managament-Team">Management Team</a>
+                    <a className="dropdown-item" href="/Trust-Document">Trust Documents</a>
                   </div>
                 </div>
               </li>
-              {/* <li>
-                <a href="/Projects">Projects</a>
-              </li> */}
-              {/* Drop down for projects */}
               <li>
-                <div class="dropdown show">
-                  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div className="dropdown show">
+                  <a className="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Projects
                   </a>
-
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    <a class="dropdown-item" href="/Health">Health</a>
-                    <a class="dropdown-item" href="/Education">Education</a>
-                    <a class="dropdown-item" href="/Orphanage">Orphanage</a>
-                    <a class="dropdown-item" href="/Oldage-Home">Oldage Home</a>
-                    <a class="dropdown-item" href="/Livelihood">Livelihood</a>
-                    <a class="dropdown-item" href="/Disaster">Disaster</a>
+                  <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a className="dropdown-item" href="/Health">Health</a>
+                    <a className="dropdown-item" href="/Education">Education</a>
+                    <a className="dropdown-item" href="/Orphanage">Orphanage</a>
+                    <a className="dropdown-item" href="/Oldage-Home">Oldage Home</a>
+                    <a className="dropdown-item" href="/Livelihood">Livelihood</a>
+                    <a className="dropdown-item" href="/Disaster">Disaster</a>
                   </div>
                 </div>
               </li>
-              {/* <li>
-                <a href="/Get-Involved">Get Involved</a>
-              </li> */}
-              {/* Drop down for Get involved */}
               <li>
-                <div class="dropdown show">
-                  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div className="dropdown show">
+                  <a className="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Get Involved
                   </a>
-
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    <a class="dropdown-item" href="/FCRA-Details">Get FCRA Details</a>
-                    <a class="dropdown-item" href="/Management-Team">Get Bank Details</a>
-                    <a class="dropdown-item" href="/Volunteer">Volunteer</a>
-                    <a class="dropdown-item" href="/Donate">Donate Now</a>
+                  <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a className="dropdown-item" href="/FCRA-Details">Get FCRA Details</a>
+                    <a className="dropdown-item" href="/Management-Team">Get Bank Details</a>
+                    <a className="dropdown-item" href="/Volunteer">Volunteer</a>
+                    <a className="dropdown-item" href="/Donate">Donate Now</a>
                   </div>
                 </div>
               </li>
               <li>
-                <div class="dropdown show">
-                  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div className="dropdown show">
+                  <a className="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Media
                   </a>
-
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    <a class="dropdown-item" href="/Events">Events</a>
-                    <a class="dropdown-item" href="/Image-Gallery">Image Gallery</a>
-                    <a class="dropdown-item" href="/Video-Gallery">Video Gallery</a>
+                  <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a className="dropdown-item" href="/Events">Events</a>
+                    <a className="dropdown-item" href="/Image-Gallery">Image Gallery</a>
+                    <a className="dropdown-item" href="/Video-Gallery">Video Gallery</a>
                   </div>
                 </div>
               </li>
@@ -144,6 +101,7 @@ class Navbar extends Component {
               className={this.state.clicked ? "fas fa-times" : "fas fa-bars"}
             ></i>
           </div>
+          <div id="overlay" className={this.state.clicked ? "active" : ""} onClick={this.handleOverlayClick}></div>
         </nav>
       </>
     );
