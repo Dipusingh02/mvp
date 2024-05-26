@@ -1,6 +1,6 @@
 import React from 'react';
 import "./App.css";
-import { Home , PHealth } from './pages';
+import { Home , PHealth, PEducation } from './pages';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 const App = () => {
@@ -10,6 +10,7 @@ const App = () => {
         <Routes>
           <Route path='/' element={<Home />}></Route>
           <Route path='/Health' element={<PHealth />}></Route>
+          <Route path='/Education' element={<PEducation />}></Route>
         </Routes>
       </Router>
     </div>
