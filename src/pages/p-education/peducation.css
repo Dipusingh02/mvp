@@ -31,6 +31,7 @@
 }
 
 .container{
+    width: 81vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,8 +41,7 @@
 }
 
 .card{
-    margin-top: 1rem;
-    margin-left: 1rem;
+    margin: 1.5rem 1rem;
     background-color : #040c18;
     /* margin-bottom: 1rem; */
     border: none;
