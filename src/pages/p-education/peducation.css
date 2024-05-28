@@ -1,0 +1,72 @@
+.education-main{
+    background-color: #031b34;
+}
+
+.education-main__heading{
+    display: flex;
+    font-size: 2.7vw;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    justify-content: center;
+    align-content: center;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.education-main__content{
+    color: #81afdd;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    padding: 2rem 2rem;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    /* font-weight: ; */
+    font-style: normal;
+}
+
+.container{
+    width: 81vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    flex-wrap: wrap;
+    background: radial-gradient(circle at 30% -100%, #042c54 25%, #042c54 85%, #1b78de 100%);
+}
+
+.card{
+    margin: 1.5rem 1rem;
+    background-color : #040c18;
+    /* margin-bottom: 1rem; */
+    border: none;
+    outline: none;
+}
+.card-title{
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+}
+.card-subtitle{
+    font-size: 11px;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    color: #81afdd;
+}
+.card-text{
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 10px;
+}
