@@ -62,18 +62,76 @@
     padding: 1rem;
 }
 
-.learn-more, .circle, .button-text{
+.learn-more,
+.circle,
+.button-text {
     margin-left: 2rem;
 }
 
+.login-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-@media screen and (max-width : 657px){
-    .wlcm_btn{
+.login-section__heading{
+    font-size: 4vw;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    justify-content: center;
+    align-content: center;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    margin-right: 1rem;
+}
+
+#login__register-section__button{
+    color: white;
+    border-radius: 23px;
+    padding: 7px 10px;
+    border: 2px solid white;
+    transition: 0.3s ease-in-out;
+    outline: none;
+    margin-right: 0.5rem;
+}
+
+#login-section__button {
+    color: white;
+    border-radius: 23px;
+    padding: 7px 10px;
+    border: 2px solid white;
+    transition: 0.3s ease-in-out;
+    outline: none;
+}
+
+#login-section__button:hover, #login__register-section__button:hover {
+    color: #17cf97;
+    border: 2px solid #17cf97;
+}
+
+@media screen and (max-width : 657px) {
+    .wlcm_btn {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .learn-more, .circle, .button-text{
+
+    .learn-more,
+    .circle,
+    .button-text {
         margin-bottom: 2rem;
+    }
+}
+@media screen and (max-width : 701px){
+    .login-section{
+        flex-direction: column;
+    }
+    .button-section{
+        margin-top: 1rem;
     }
 }
