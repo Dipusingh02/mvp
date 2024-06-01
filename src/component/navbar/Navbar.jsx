@@ -51,10 +51,10 @@ class Navbar extends Component {
                   <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
                     <a className="dropdown-item" href="/Health">Health</a>
                     <a className="dropdown-item" href="/Education">Education</a>
-                    <a className="dropdown-item" href="/Orphanage">Orphanage</a>
-                    <a className="dropdown-item" href="/Oldage-Home">Oldage Home</a>
+                    {/* <a className="dropdown-item" href="/Orphanage">Orphanage</a> */}
+                    {/* <a className="dropdown-item" href="/Oldage-Home">Oldage Home</a> */}
                     <a className="dropdown-item" href="/Livelihood">Livelihood</a>
-                    <a className="dropdown-item" href="/Disaster">Disaster</a>
+                    {/* <a className="dropdown-item" href="/Disaster">Disaster</a> */}
                   </div>
                 </div>
               </li>
@@ -64,8 +64,8 @@ class Navbar extends Component {
                     Get Involved
                   </a>
                   <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    <a className="dropdown-item" href="/FCRA-Details">Get FCRA Details</a>
-                    <a className="dropdown-item" href="/Management-Team">Get Bank Details</a>
+                    <a className="dropdown-item" href="/FCRA-Details">Get Documents</a>
+                    {/* <a className="dropdown-item" href="/Management-Team">Get Bank Details</a> */}
                     <a className="dropdown-item" href="/Volunteer">Volunteer</a>
                     <a className="dropdown-item" href="/Donate">Donate Now</a>
                   </div>
@@ -78,8 +78,8 @@ class Navbar extends Component {
                   </a>
                   <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
                     <a className="dropdown-item" href="/Events">Events</a>
-                    <a className="dropdown-item" href="/Image-Gallery">Image Gallery</a>
-                    <a className="dropdown-item" href="/Video-Gallery">Video Gallery</a>
+                    {/* <a className="dropdown-item" href="/Image-Gallery">Image Gallery</a> */}
+                    {/* <a className="dropdown-item" href="/Video-Gallery">Video Gallery</a> */}
                   </div>
                 </div>
               </li>
@@ -88,9 +88,6 @@ class Navbar extends Component {
               </li>
               <li>
                 <button id="DonateButton">Donate Now</button>
-              </li>
-              <li>
-                <button id="logbutton">Log In</button>
               </li>
             </ul>
           </div>
