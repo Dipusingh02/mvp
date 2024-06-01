@@ -22,6 +22,26 @@ const featuresData = [
     onButtonClick: () => console.log("Clicked Button 3")
   },
   {
+    image: child3,
+    buttonText: '  Donate Now ',
+    onButtonClick: () => console.log("Clicked Button 3")
+  },
+  {
+    image: child3,
+    buttonText: '  Donate Now ',
+    onButtonClick: () => console.log("Clicked Button 3")
+  },
+  {
+    image: child3,
+    buttonText: '  Donate Now ',
+    onButtonClick: () => console.log("Clicked Button 3")
+  },
+  {
+    image: child3,
+    buttonText: '  Donate Now ',
+    onButtonClick: () => console.log("Clicked Button 3")
+  },
+  {
     image: child4,
     buttonText: '  Donate Now ',
     onButtonClick: () => console.log("Clicked Button 4")
@@ -31,6 +51,7 @@ const featuresData = [
 const H_Features = () => {
   return (
     <div className="features-row-container">
+    <h1>Children Support</h1>
       {featuresData.map((item, index) => (
         <Features
           key={index}

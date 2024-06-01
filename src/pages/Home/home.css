@@ -54,7 +54,24 @@
     font-weight: 700;
     font-style: normal;
 }
+.mvp_wh_bgheros{
 
+    background-image: url(../../assets/homebg1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 100% 100%;
+    position: relative; 
+   
+   
+  }
+  .mvp_wh_herosblur{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
 .wlcm_btn {
     display: flex;
     justify-content: center;

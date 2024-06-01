@@ -13,10 +13,62 @@ const IdfeaturesData =[
         buttonText: '  Donate Now ',
         onButtonClick: () => console.log("Clicked Button 1")
       },
+    {
+        image: child1,
+        name:'hellog',
+        contentText:'dude you have do it',
+        buttonText: '  Donate Now ',
+        onButtonClick: () => console.log("Clicked Button 1")
+      },
+    {
+        image: child1,
+        name:'hellog',
+        contentText:'dude you have do it',
+        buttonText: '  Donate Now ',
+        onButtonClick: () => console.log("Clicked Button 1")
+      },
+    {
+        image: child1,
+        name:'hellog',
+        contentText:'dude you have do it',
+        buttonText: '  Donate Now ',
+        onButtonClick: () => console.log("Clicked Button 1")
+      },
+    {
+        image: child1,
+        name:'hellog',
+        contentText:'dude you have do it',
+        buttonText: '  Donate Now ',
+        onButtonClick: () => console.log("Clicked Button 1")
+      },
+    {
+        image: child1,
+        name:'hellog',
+        contentText:'dude you have do it',
+        buttonText: '  Donate Now ',
+        onButtonClick: () => console.log("Clicked Button 1")
+      },
+    {
+        image: child1,
+        name:'hellog',
+        contentText:'dude you have do it',
+        buttonText: '  Donate Now ',
+        onButtonClick: () => console.log("Clicked Button 1")
+      },
+    {
+        image: child1,
+        name:'hellog',
+        contentText:'dude you have do it',
+        buttonText: '  Donate Now ',
+        onButtonClick: () => console.log("Clicked Button 1")
+      },
+     
 ]
 
 const H_Medical = () => {
     return (
+      <div className='mvp_wh_bgheros'>
+      <div className='mvp_wh_herosblur'></div>
       <div className="H_medical-row-container">
         {IdfeaturesData.map((item, index) => (
           <Idfeatures
@@ -28,6 +80,7 @@ const H_Medical = () => {
             onButtonClick={item.onButtonClick}
           />
         ))}
+      </div>
       </div>
     );
   };

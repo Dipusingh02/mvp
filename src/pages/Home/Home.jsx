@@ -11,6 +11,8 @@ const Home = () => {
       <Navbar />
       <Header />
       <H_wlcm />
+      <H_Features />
+      <H_Medical />
     </div>
   )
 }
