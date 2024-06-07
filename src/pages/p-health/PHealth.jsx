@@ -2,6 +2,7 @@ import React from 'react';
 import "./phealth.css";
 import { Navbar, Header } from '../../component';
 import { Button } from '../../container';
+import H_Medical from '../Home/H_Medical';
 
 const ButtonData = [{
   buttonText: 'JOIN US',
@@ -42,6 +43,7 @@ const PHealth = () => {
           ))}
         </div>
       </div>
+      <H_Medical />
     </div>
   )
 }

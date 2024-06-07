@@ -1,7 +1,24 @@
 .education-main{
     background-color: #031b34;
 }
+.mvp_education_bgheros{
 
+    background-image: url(../../asset/schchildbgimg.png     );
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 100% 100%;
+    position: relative; 
+   
+   
+  }
+  .mvp_education_herosblur{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
 .education-main__heading{
     display: flex;
     font-size: 2.7vw;
@@ -37,7 +54,7 @@
     align-items: center;
     border-radius: 8px;
     flex-wrap: wrap;
-    background: radial-gradient(circle at 30% -100%, #042c54 25%, #042c54 85%, #1b78de 100%);
+  
 }
 
 .card{

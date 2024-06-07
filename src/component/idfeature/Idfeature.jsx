@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Idfeature.css";
+import { Button } from '../../container';
 const Idfeature = ({ image, name,contentText,buttonText, onButtonClick, imageAlt = "Feature" }) => (
   <div className="idfeature-container">
     <div className="idfeature-box">
@@ -10,9 +11,7 @@ const Idfeature = ({ image, name,contentText,buttonText, onButtonClick, imageAlt
       />
       <h1>{name}</h1>
       <h2>{contentText}</h2>
-      <button onClick={onButtonClick} className="feature-button">
-        {buttonText}
-      </button>
+    <Button buttonText={buttonText}  className="idfeature-button"/>
     </div>
   </div>
 );

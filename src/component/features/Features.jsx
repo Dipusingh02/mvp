@@ -1,5 +1,6 @@
 import React from "react";
 import "./features.css";
+import { Button } from "../../container";
 
 const Features = ({ image, buttonText, onButtonClick, imageAlt = "Feature" }) => (
   <div className="feature-container">
@@ -9,9 +10,9 @@ const Features = ({ image, buttonText, onButtonClick, imageAlt = "Feature" }) =>
         alt={imageAlt}
         className="feature-img"
       />
-      <button onClick={onButtonClick} className="feature-button">
-        {buttonText}
-      </button>
+<div className="feature-button" >
+      <Button buttonText={buttonText}   />
+</div>
     </div>
   </div>
 );

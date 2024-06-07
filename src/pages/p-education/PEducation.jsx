@@ -14,7 +14,10 @@ const PEducation = () => {
       <div className='education-main__content'>
         At MVEC Trust, we believe that every child deserves access to quality education, regardless of their socio-economic background. Our mission is to bridge the educational gap and create a brighter future for underprivileged children in India. Below are the various initiatives we have undertaken to make this vision a reality
       </div>
+      <div className='mvp_education_bgheros'>
+      <div className='mvp_education_herosblur'></div>
       <div className='container'>
+     
         <div className="card" style={{
           borderRadius: "18px",
           width: "18rem"
@@ -149,6 +152,7 @@ const PEducation = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   )
 }

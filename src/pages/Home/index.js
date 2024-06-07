@@ -1,0 +1,1 @@
+export {default as H_medical} from "./H_Medical";
